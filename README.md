@@ -63,7 +63,6 @@
    var data = {
        username: [String],     //用户名      必填
        password: [String],    //密码        必填
-       captcha：[String],      // 验证码      必填
        sex：0 || 1  0：女  1：男,
        age: number,              //年龄 10~120
        email : [String],      //邮箱       必填
