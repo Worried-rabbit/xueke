@@ -357,3 +357,44 @@ var res = {
     	data:[]
     }
 ```
+
+
+### 13.修改密码
+
+
+1.接口名:'/update/user/password'
+
+
+2.类型 ：'POST'
+
+3.描述：此接口用来修改密码的
+
+
+4.入参:
+
+```js
+//登录后的入参
+{
+    type:[Number]  // 登录后 : 1 
+	password:[string] // 要修改成的密码
+}
+//未登录的入参 
+{
+    type:[Number] // 未登录 : 0
+    username:[String] // 用户账号
+    usedpass:[String] //旧密码
+    password:[String] //新密码
+}
+```
+
+5. 出参
+
+```js
+var res = {
+	status:[Number],     //状态   1：成功    0：失败
+         msg:[ String]       //返回描述信息
+    	data:[]
+    }
+```
+
+
