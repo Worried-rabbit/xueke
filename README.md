@@ -397,4 +397,27 @@ var res = {
     }
 ```
 
+### 14.排行榜
+
+1.接口名:'/task/ranking'
+
+2.类型 ：'POST'
+
+3.描述：此接口会返回排行榜
+
+4.入参:{} 	
+
+5. 出参
+```js
+var res = {
+	status  :[Number],
+    	msg	:[String],
+    	data	:[{
+		userId:[Number],  // 用户的id
+      		avgScore:[Number],//平均分
+      		avatorName: [String]     //用户的姓名
+      		email: [String]        //用户的邮箱
+	}]
+    }
+```
 
