@@ -421,3 +421,66 @@ var res = {
     }
 ```
 
+### 15.创建任务
+
+
+1.接口名:'/publish/task'
+
+
+2.类型 ：'POST'
+
+
+3.描述：此接口用来创建任务
+
+
+4.入参:
+
+
+```
+{
+	 taskName: [string],    //任务名称
+	 pid:[number],		//父任务的id
+	 desc:[string]		//任务的详情
+}
+```
+
+
+5. 出参
+```js
+var res = {
+	status  :[Number],
+    	msg	:[String],
+    	data	:[]
+    }
+```
+
+### 16.删除任务
+
+
+1.接口名:'/delete/task'
+
+
+2.类型 ：'POST'
+
+
+3.描述：此接口用来删除任务
+
+
+4.入参:
+
+
+```
+{
+	 taskId: [number],    //任务的id
+}
+```
+
+
+5. 出参
+```js
+var res = {
+	status  :[Number],
+    	msg	:[String],
+    	data	:[]
+    }
+```
